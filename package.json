@@ -1,0 +1,36 @@
+{
+  "name": "atrium",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Atrium turns a course syllabus into an editable weekly study plan and a grounded tutor.",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -n web,api -c cyan,magenta \"npm run dev -w @atrium/web\" \"npm run dev -w @atrium/server\"",
+    "build": "npm run build -w @atrium/web && npm run build -w @atrium/server",
+    "typecheck": "tsc -p packages/shared --noEmit && tsc -p apps/server --noEmit && tsc -p apps/web --noEmit",
+    "test": "vitest run",
+    "lint": "eslint .",
+    "generate:sample": "tsx apps/server/scripts/generate-sample-pdf.ts",
+    "start": "node apps/server/dist/index.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.36.0",
+    "@types/node": "^22.18.6",
+    "concurrently": "^9.2.1",
+    "eslint": "^9.36.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.22",
+    "globals": "^16.4.0",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.44.1",
+    "vitest": "^3.2.4"
+  }
+}

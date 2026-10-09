@@ -1,0 +1,37 @@
+CS 301 — Data Structures and Algorithms
+University of Example · Department of Computer Science
+Fall 2026
+Instructor: Dr. Lena Okonkwo
+Office hours: Tuesdays and Thursdays, 2:00–3:30 p.m., Room 214
+
+Course description
+CS 301 introduces the data structures and algorithm-analysis habits used in later systems and software courses. Students implement the structures themselves, argue about running time in writing, and finish with an individual graph visualizer.
+
+Weekly topics
+Week 1: Asymptotic analysis. Big-O, big-Theta, and how to bound the running time of loops and recursive functions.
+Week 2: Arrays and amortized analysis. Dynamic arrays, doubling strategies, and aggregate analysis.
+Week 3: Linked lists and stacks. Singly and doubly linked lists, and stack-based evaluation.
+Week 4: Queues and recursion. Circular queues, tail recursion, and the call stack.
+Week 5: Trees and binary search trees. Traversals, insertion, and deletion.
+Week 6: AVL trees and heaps. Rotations, the heap property, and priority queues.
+Week 7: Hash tables. Chaining, open addressing, and choosing a hash function.
+Week 8: Graphs and traversal. Representations, breadth-first search, and depth-first search.
+Week 9: Shortest paths. Dijkstra's algorithm and when it does not apply.
+Week 10: Sorting. Mergesort, quicksort, and the comparison lower bound.
+Week 11: Dynamic programming. Overlapping subproblems, memoization, and tabulation.
+Week 12: Review and project studio. Practice exams and graph visualizer critiques.
+
+Assessments
+Assignment 1: Complexity exercises. Due September 12, 2026. Weight 8%. Covers asymptotic analysis.
+Assignment 2: Linked structures. Due September 26, 2026. Weight 8%. Covers linked lists and stacks.
+Quiz 1: Foundations quiz. Due October 2, 2026. Weight 10%. Covers weeks 1 through 4.
+Midterm Exam: Midterm exam. Due October 22, 2026. Weight 25%. Covers weeks 1 through 7.
+Assignment 3: Hashing problems. Due November 6, 2026. Weight 8%. Covers hash tables.
+Project: Graph visualizer. Due November 20, 2026. Weight 16%. Covers graphs and shortest paths.
+Final Exam: Cumulative final exam. Due December 10, 2026. Weight 25%. Covers every weekly topic.
+
+Policies
+Late work loses 10% per day for four days and is not accepted after that. Exams are closed-book except for one handwritten sheet. The project is individual work. Office hours are the best place to debug a proof or a failing test.
+
+Grading
+Assignments are 24% combined, the quiz is 10%, the project is 16%, the midterm is 25%, and the final exam is 25%.
