@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply bg-paper text-ink antialiased;
+  }
+
+  body {
+    @apply m-0 min-h-dvh font-sans;
+    background:
+      radial-gradient(1100px 420px at 0% -10%, rgba(15, 92, 86, 0.09), transparent 55%),
+      radial-gradient(800px 360px at 100% 0%, rgba(138, 94, 52, 0.1), transparent 50%),
+      #f3efe6;
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    font: inherit;
+  }
+
+  ::selection {
+    background: #cfe3e0;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-4 py-2 text-sm font-semibold transition disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  .btn-primary {
+    @apply btn bg-teal text-paper shadow-card hover:bg-teal-deep;
+  }
+
+  .btn-secondary {
+    @apply btn border border-line bg-card text-ink hover:border-ink/30;
+  }
+
+  .btn-quiet {
+    @apply btn text-ink-soft hover:bg-paper-deep hover:text-ink;
+  }
+
+  .field {
+    @apply w-full rounded-lg border border-line bg-card px-3 py-2 text-sm text-ink outline-none ring-teal/30 focus:border-teal focus:ring-2;
+  }
+
+  .panel {
+    @apply border-line bg-card/80;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
