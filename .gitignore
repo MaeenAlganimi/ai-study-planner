@@ -1,0 +1,14 @@
+node_modules/
+dist/
+coverage/
+.env
+.env.local
+*.tsbuildinfo
+.DS_Store
+npm-debug.log*
+.vite/
+.playwright-mcp/
+apps/web/dist/
+apps/server/dist/
+.vercel
+*.log
