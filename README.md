@@ -151,6 +151,10 @@ The container listens on `PORT` (8080 in the image).
 - The model is told to ignore instructions inside the syllabus or the student message that try to change its job. That is a boundary, not a complete defense against prompt injection.
 - Keys stay in server environment variables. `/api/config` reports only whether demo mode is on.
 
+## AI-assisted development
+
+This project was built with AI-assisted development: the code, tests and docs were drafted with an AI assistant and then checked by running the project's tests and build. It has not had an independent security audit, and nothing here is a claim about real users or production traffic.
+
 ## License
 
 [MIT](LICENSE) © 2026 Maeen Alganimi
